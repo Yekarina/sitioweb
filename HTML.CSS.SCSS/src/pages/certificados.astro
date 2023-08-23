@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Default/index.astro";
+import certificadoimagen from "../assets/images/certificadosimagen.png";
+import "../styles/certificados.scss";
+---
+<Layout title="Welcome to Astro." page="certificados">
+    <div id="portafolio1">
+        <div class="container">
+    
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 24rem;">
+                <img src={certificadoimagen} alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">UX UI Designer</h5>
+                  <p class="card-text">
+                    Lleve el curso avanzado en coderhouse de diseñadora de interfaces de usuario
+                    obteniendo una calificación máxima.
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src={certificadoimagen} alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">UX Writing</h5>
+                    <p class="card-text">
+                      En este curso pude implementar mis conocimiento en el contenido textual de un 
+                      sitio web.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        <div class="container">
+    
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src={certificadoimagen} alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">UX Research</h5>
+                    <p class="card-text">
+                      Este curso me ayudo a seguir un proceso adecuado de investigación del usuario,
+                      implementando técnicas de investigación.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                  <div class="card" style="width: 24rem;">
+                    <img src={certificadoimagen} alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Desarrollo Web</h5>
+                      <p class="card-text">
+                        Conocimientos de maquetación, HTML, CSS, Java Scrip y utilizar framework, son 
+                        parte de los skill desarrollados.
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+</Layout>   

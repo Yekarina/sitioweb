@@ -1,0 +1,66 @@
+#footer {
+  display: flex;
+  justify-content: center;
+  padding-block: 5%;
+  background-color: #2a2e35;
+}
+.cuadro_footer {
+  width: 100%;
+  max-width: 484px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.fotofoter {
+  width: 80px;
+  height: 80px;
+}
+
+.footer_menu {
+  font-size: 18px;
+  color: aliceblue;
+  border: 0px;
+  background-color: none;
+  width: 100%;
+  gap: 40px;
+  display: flex;
+  padding-block: 30px;
+  justify-content: center;
+  
+  @media (max-width: 375px){
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  }
+  
+}
+
+  
+  
+  
+
+ 
+.redessociales {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.instagram {
+  width: 40px;
+  height: 40px;
+}
+.linkedin {
+  width: 40px;
+  height: 40px;
+}
+.whatsapp {
+  width: 40px;
+  height: 40px;
+}
+.behance {
+  width: 40px;
+  height: 40px;
+}

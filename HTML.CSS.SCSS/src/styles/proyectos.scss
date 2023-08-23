@@ -1,0 +1,21 @@
+
+
+
+#portafolio1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 3%;
+}
+
+.card{
+  background-color: #2A2E35;
+  color: #AFB3B8;
+  border:none;
+}
+.row{
+  grid-gap: 30px;
+}
+

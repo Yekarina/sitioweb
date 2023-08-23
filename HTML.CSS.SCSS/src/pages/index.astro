@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Default/index.astro";
+import fotopresentacion from "../assets/images/fotopresentacion.png"
+import portafolioimagen from "../assets/images/portafolio-imagen.png"
+import "../styles/index.scss"
+---
+
+<Layout title="Welcome to Astro." page="inicio">
+  <div class="main">
+    <div class="imagen-fondo">
+      <div id="presentacion">
+        <div class="titulo_main">
+          <p>hola soy karina, 
+            diseñadora UX UI de experiencias digitales centradas
+            en el usuario</p>
+          
+         
+        </div>
+        <div>
+          <img src={fotopresentacion} alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="contenido">
+      <div class="cuadro-conocemas">
+        <div class="conocemas-texto">
+          <span class="texto_main"
+            >Llevo más de 5 años en el mundo del diseño publicitario, me inicie
+            en la creación de marca</span
+          >
+          <span class="button_rosado">Conoce más</span>
+        </div>
+      </div>
+
+      <div class="subtitulo_main">
+        <p>
+          Conoce mis distintos proyectos elaborados para startup en la industria
+          tecnologica tanto en el sector minero, farmaceutico y educativo
+        </p>
+      </div>
+
+      <div class="portafolio">
+        <div class="portafolio-texto">
+          <span class="texto_main"
+            >Todo proyecto pasa por un proceso de diseño, que parte desde
+            conocer la necesidad del usuario</span
+          >
+          <span class="button_rosado">Portafolio</span>
+        </div>
+        <span >
+          <img class="portafolio-image" src={portafolioimagen} alt="" />
+        </span>
+      </div>
+    </div>
+  </div>
+</Layout>
+
