@@ -1,3 +1,6 @@
+@import "../../layouts/Default/variables.scss";
+@import "../../layouts/Default/styles.scss";
+
 #footer {
   display: flex;
   justify-content: center;
@@ -19,15 +22,20 @@
 }
 
 .footer_menu {
-  font-size: 18px;
-  color: aliceblue;
   border: 0px;
   background-color: none;
   width: 100%;
-  gap: 40px;
+  gap: 30px;
   display: flex;
   padding-block: 30px;
   justify-content: center;
+
+  @media (max-width: 768px){
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  }
   
   @media (max-width: 375px){
     display: flex;

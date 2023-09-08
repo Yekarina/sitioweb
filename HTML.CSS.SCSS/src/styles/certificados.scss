@@ -1,21 +1,31 @@
-#main5 {
-    background-color: #21252b;
-  }
-  
-  #portafolio1 {
-    display: flex;
-    flex-direction: column;
+@import "../layouts/Default/styles.scss";
+@import "../layouts/Default/variables.scss";
+
+
+.container-certificado{
+  @include width-body;
+  display: grid;
+  gap: 25px;
+  background-color: map-get($map: $colors, $key: color-secundario);
+  padding: 3%;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+  #carousel-certificados {
+    display: grid;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 3%;
-  }
+   
   
-  .card{
-    background-color: #2A2E35;
-    color: #AFB3B8;
-    border:none;
-  }
-  .row{
-    grid-gap: 30px;
-  }
+ }
+
+ 
+
+ .texto-certificado{
+  @include width-body;
+  padding: 20px;
+  
+  
+  
+  
+ }

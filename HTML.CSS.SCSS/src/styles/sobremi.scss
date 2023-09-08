@@ -1,57 +1,53 @@
-.main1 {
-  display: flex;
-  justify-content: center;
-  padding: 3%;
-}
+@import "../layouts/Default/styles.scss";
+@import "../layouts/Default/styles.scss";
+
 .contenido-sobremi {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
   gap: 20px;
  
 }
+.cuadrosobremi {
+  border-radius: 20px;
+  @include width-body;
+  padding: 30px;
+  @include flex-atributos;
+  background-color: map-get($map: $colors, $key: color-secundario);
+  gap: 30px;
+  @media (max-width: 375px) {
+   font-size: map-get($map: $font, $key: text-xs);
+   
+  }
+  @media (max-width: 768px) {
+    font-size: map-get($map: $font, $key: text-sm);
+   
+
+   }
+}
+
 .imagensobremi {
   width: 136px;
   height: 136px;
   display: flex;
   
 }
-.textosobremi {
-  display: flex;
-  font-size: 20px;
-  color: aliceblue;
-}
-.textocolor {
-  color: #ef6beb;
-  font-size: 20px;
-}
-.descripcion {
-  color: aliceblue;
-  line-height: 27px;
-  font-size: 18px;
-}
-.cuadrosobremi {
-  border-radius: 20px;
-  max-width: 1320px;
-  width: 100%;
-  padding: 23px;
-  display: flex;
-  justify-content: center;
-  background-color: #42464d;
-  color: #ffffff;
-  @media (max-width: 375px) {
-   font-size: 14px;
-   
-  }
-  @media (max-width: 768px) {
-    font-size: 18px;
-    width: 60%;
 
-   }
+.texto-destacado {
+  font-size: map-get($map: $font, $key: text-2xl);
+  color: map-get($map: $colors, $key: color-destacado);
+
+  @media (max-width: 768px) {
+    font-size: map-get($map: $font, $key: text-lg);
+  }
+  @media (max-width: 375px) {
+    font-size: map-get($map: $font, $key: text-xs);
+  }
 }
-.descripcionsobremi{
-  width: 95%;
-  display: flex;
-  
+
+.cuadrosobremi img{
+  border-radius: 20px;
+  width: 100%;
+  align-self: center;
+
 }

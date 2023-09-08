@@ -1,72 +1,58 @@
 ---
 import Layout from "../layouts/Default/index.astro";
-import certificadoimagen from "../assets/images/certificadosimagen.png";
+import uxavanzado from "../assets/images/uxavanzado.png";
+import uxui from "../assets/images/uxui.png";
+import uxresearch from "../assets/images/uxresearch.png";
+import "../layouts/Default/variables.scss";
 import "../styles/certificados.scss";
 ---
-<Layout title="Welcome to Astro." page="certificados">
-    <div id="portafolio1">
-        <div class="container">
-    
-          <div class="row">
-            <div class="col">
-              <div class="card" style="width: 24rem;">
-                <img src={certificadoimagen} alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">UX UI Designer</h5>
-                  <p class="card-text">
-                    Lleve el curso avanzado en coderhouse de diseñadora de interfaces de usuario
-                    obteniendo una calificación máxima.
-                  </p>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col">
-                <div class="card" style="width: 24rem;">
-                  <img src={certificadoimagen} alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">UX Writing</h5>
-                    <p class="card-text">
-                      En este curso pude implementar mis conocimiento en el contenido textual de un 
-                      sitio web.
-                    </p>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    
-        <div class="container">
-    
-            <div class="row">
-              <div class="col">
-                <div class="card" style="width: 24rem;">
-                  <img src={certificadoimagen} alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">UX Research</h5>
-                    <p class="card-text">
-                      Este curso me ayudo a seguir un proceso adecuado de investigación del usuario,
-                      implementando técnicas de investigación.
-                    </p>
-                    
-                  </div>
-                </div>
-              </div>
-      
-              <div class="col">
-                  <div class="card" style="width: 24rem;">
-                    <img src={certificadoimagen} alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">Desarrollo Web</h5>
-                      <p class="card-text">
-                        Conocimientos de maquetación, HTML, CSS, Java Scrip y utilizar framework, son 
-                        parte de los skill desarrollados.
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
 
-</Layout>   
+<Layout title="certificados de estudio" page="certificados">
+  <div class="main1">
+    <div class="container-certificado">
+      <div
+        id="carousel-certificados"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src={uxavanzado} class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src={uxui} class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src={uxresearch} class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+       
+      </div>
+      <div class="texto-subtitulo">
+        <p>
+          Los cursos cortos que han ayudado a mejorar mi skill profesional, de
+          esta manera he podido desenvolverme en distintas áreas de una
+          organización, y también desarrollar mis habilidades blandas.
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>

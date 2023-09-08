@@ -1,37 +1,30 @@
 ---
 import Layout from "../layouts/Default/index.astro";
+import "../layouts/Default/variables.scss";
 import "../styles/contactos.scss";
 ---
-<Layout title="Welcome to Astro." page="contactos">
-    <div id="naim4">
-        <div class="cuadradocontacto">
-            <div>
-                <p class="titulocontacto">trabajemos juntos</p>
-            </div>
-            <div>
-                <form class="formulario">
-                    <div class="nombrecontacto">
-                        <label for="nombre" class="nombre">nombre</label>
-                    <input type="text" class="input">
-                    </div>
-                    <div class="correocontacto">
-                        <label for="correo" class="correo">correo</label>
-                    <input type="text" class="input">
-                    </div>
-                    <div class="mensajecontacto"> 
-                        <label for="mensaje" class="mensaje">mensaje</label>
-                        <input type="email" class="input">
-                    </div>
-                   
-                </form>
-            </div>
-            
-            <div>
-                <button class="buttoncontacto">enviar</button>
-            </div>
 
+<Layout title="Contactos" page="contactos">
+  <div class="main1">
+    <section class="contacto">
+      <h1 class="texto-titulo ">trabajemos juntos</h1>
+      <form class="formulario">
+        <div class="contac-form-group">
+          <label for="nombre">nombre</label>
+          <input required type="text" class="input" />
         </div>
-       
-    </div>
+        <div class="contac-form-group">
+          <label for="correo">correo</label>
+          <input required type="email" class="input" />
+        </div>
+        <div class="contac-form-group">
+          <label for="mensaje">mensaje</label>
+          <textarea required name="mensaje" id="mensaje" rows="6"></textarea>
+        </div>
+        <div class="boton-enviar">
+          <button class="button_rosado">enviar</button>
+        </div>
+      </form>
+    </section>
+  </div>
 </Layout>
-    

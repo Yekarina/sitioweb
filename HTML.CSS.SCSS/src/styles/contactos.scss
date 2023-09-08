@@ -1,35 +1,68 @@
-#naim4 {
-  background-color: #21252b;
+@import "../layouts/Default/styles.scss";
+@import "../layouts/Default/variables.scss";
+
+.contacto{
+  @include width-body;
+  display: grid;
+  gap: 25px;
+  background-color: map-get($map: $colors, $key: color-secundario);
+  padding: 3%;
+  justify-content: center;
+  border-radius: 20px;
 }
-.cuadradocontacto {
-  background-color: #2a2e35;
+.texto-titulo{
+  justify-self: center;
 }
 
-.titulocontacto {
-  color: #ef6beb;
-  font-size: 28px;
+.formulario{
+  display: grid;
+  gap: 20px;
+  justify-self: center;
+  @media (max-width: 768px) {
+    width: 80%;
+    justify-self: center;
+    
+  }
 }
-
-.buttoncontacto {
-  background-color: #ef6beb;
-  color: aliceblue;
-  font-size: 20px;
-  border-radius: 30px;
+.formulario label {
+  color: map-get($map: $colors, $key: color-texto);
+}
+.formulario input, 
+.formulario textarea {
+  color: map-get($map: $colors, $key: color-texto);
+  background-color: map-get($map: $colors, $key: color-input);
+  border-radius: 5px;
   border: none;
-}
+  padding: 5px 10px;
+  width: 427px;
 
-.nombre {
-  color: aliceblue;
+  @media (max-width: 768px) {
+    width: 300px;
+    
+  }
+  
+  @media (max-width: 375px) {
+    width: 90%;
+    
+  }
+ 
 }
-.correo {
-  color: aliceblue;
+.formulario textarea{
+  resize: vertical;
 }
-.mensaje {
-  color: aliceblue;
+.contac-form-group label {
+  width: 130px;
 }
-.input {
-  background-color: #2a2e35;
-  border-color: #42464d;
-  border-radius: 10px;
-  height: 36px;
+.boton-enviar{
+  display: grid;
+  justify-content: end;
+  border: none;
+  
+  
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+  @media (max-width: 375px) {
+    width: 90%;
+  }
 }

@@ -1,23 +1,25 @@
 ---
 import Layout from "../layouts/Default/index.astro";
 import sobremi from "../assets/images/foto sobre mi.png";
+import imagendescripcion from "../assets/images/imagendescripcion.jpg";
+import "../layouts/Default/variables.scss";
 import "../styles/sobremi.scss";
 ---
 
-<Layout title="Welcome to Astro." page="sobremi">
+<Layout title="Sobre mi" page="sobremi">
   <div class="main1">
-    <div class="contenido-sobremi width-body">
+    <div class="contenido-sobremi">
       <div>
-        <img class="imagensobremi width-body" src={sobremi} alt="" />
+        <img class="imagensobremi" src={sobremi} alt="" />
       </div>
 
-      <div class="textosobremi width-body">
-        <p class="textocolor">¡Hola, soy Karina!</p>
-        <p>diseñadora gráfica publicitaria</p>
+      <div class="texto-titulo ">
+        <p class="texto-destacado">¡Hola, soy Karina!</p>
+        <p>Diseñadora UX-UI de experiencias digitales centradas en el usuario</p>
       </div>
 
-      <div class="cuadrosobremi width-body">
-        <p class="descripcionsobremi">
+      <div class="cuadrosobremi ">
+        <p class="texto-contenido">
           Hola, en los ultimos meses me he dedicado a realizar proyectos
           de la industria minera, empece a incursionar en el mundo de la 
           tecnología e innovación en la startUp Deep Pit Tecnology donde 
@@ -50,6 +52,9 @@ import "../styles/sobremi.scss";
       
 
         </p>
+        
+          <img src={imagendescripcion} alt="">
+        
       </div>
     </div>
   </div>

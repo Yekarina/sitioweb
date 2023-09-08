@@ -1,23 +1,27 @@
+@import "../../layouts/Default/variables.scss";
+@import "../../layouts/Default/styles.scss";
+
+
 .header-items {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  
-  
-  
-}
-#header {
-  background-color: #2a2e35;
   display: flex;
   justify-content: space-between;
-  padding: 15px 200px 15px 200px;
-  
-  
+  align-items: flex-start;
+  @include width-body;
+ 
+}
+
+#header {
+  background-color: map-get($map: $colors, $key: color-secundario);
+  display: flex;
+  justify-content: center;
+  padding: 1% 3% 1% 3%;
+ 
 }
 
 
 .navbar {
   background-color: none;
-  color: white;
+  color: map-get($map: $colors, $key: color-texto );
   display: flex;
   justify-content: space-between;
   padding: 10px 10px;
@@ -33,16 +37,27 @@
 
 .menu li {
   margin: 0 15px;
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
 .menu li a {
-  color: white;
   text-decoration: none;
+  font-size: map-get($map: $font, $key: text-sm);
 }
 
-@media (max-width: 678px) {
+.toggle{
+  background: none;
+  border: none;
+  display: none;
+}
+
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
+    background-color: aqua;
   }
 
   .menu {
@@ -50,7 +65,6 @@
     flex-direction: column;
     width: 100%;
     text-align: center;
-    background-color: #333;
   }
 
   .navbar:hover .menu {
@@ -64,14 +78,14 @@
 @media (max-width: 375px) {
   .navbar {
     flex-direction: column;
+    
   }
-
   .menu {
     display: none;
     flex-direction: column;
     width: 100%;
     text-align: center;
-    background-color: #333;
+    
   }
 
   .navbar:hover .menu {
@@ -81,7 +95,7 @@
   .menu li {
     margin: 10px 0;
   }
+ 
 }
-
 
 

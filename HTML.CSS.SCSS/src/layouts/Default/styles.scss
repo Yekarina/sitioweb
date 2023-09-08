@@ -1,6 +1,26 @@
+@import "./variables.scss";
+
+
 * {
   margin: 0;
   padding: 0;
+}
+
+.main1 {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+/*MIXIN*/
+@mixin width-body{
+  max-width: 1320px;
+  width: 100%;
+}
+@mixin flex-atributos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @font-face {
@@ -15,40 +35,81 @@ a {
   font-size: 20px;
 }
 
-html {
-}
 
-body {
-  font-family: mulish;
-}
 
 .fondo_oscuro {
   background-color: #21252b;
-  font-family: poppins;
+  
 }
 
-.texto {
-  color: aliceblue;
-}
+
 
 .button_rosado {
-  background-color: #ef6beb;
+  background-color: map-get($map: $colors, $key: color-botton);
   border-radius: 38px;
   height: 50px;
-  color: #ffffff;
+  color: #ffff;
   width: fit-content;
   padding: 10px 40px;
   display: flex;
   align-items: center;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    
+    background-color: map-get($map: $colors, $key: color-botton-hover);
+  }
+}
+.button_rosado {
 
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: map-get($map: $font, $key: text-base);
     height: 30px;
   }
   @media (max-width: 375px) {
-    font-size: 14px;
+    font-size: map-get($map: $font, $key: text-xs);
     height: 30px;
+  }
+  
+}
+
+
+
+
+/*TEXTOS*/
+.texto-titulo {
+  font-size: map-get($map: $font, $key: text-2xl);
+  color: map-get($map: $colors, $key: color-texto);
+
+  @media (max-width: 768px) {
+    font-size: map-get($map: $font, $key: text-lg);
+  }
+  @media (max-width: 375px) {
+    font-size: map-get($map: $font, $key: text-xs);
+  }
+
+}
+.texto-contenido {
+  font-size: map-get($map: $font, $key: text-lg);
+  color: map-get($map: $colors, $key: color-texto);
+
+  @media (max-width: 768px) {
+    font-size: map-get($map: $font, $key: text-base);
+  }
+  @media (max-width: 375px) {
+    font-size: map-get($map: $font, $key: text-xs);
+  }
+  
+}
+.texto-subtitulo{
+  color: map-get($map: $colors, $key: color-texto);
+  font-size: map-get($map: $font, $key: text-xl);
+
+  @media (max-width: 768px) {
+    font-size: map-get($map: $font, $key: text-base);
+  }
+  @media (max-width: 375px) {
+    font-size: map-get($map: $font, $key: text-xs);
   }
 }
